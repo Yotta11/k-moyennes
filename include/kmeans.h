@@ -1,25 +1,4 @@
-/**
- * kmeans.h
- * ========
- * Module K-Moyennes (K-Means) pour la segmentation d'images.
- *
- * Deux modes de traitement :
- *  ① Images en niveaux de gris (PGM) : chaque pixel est un scalaire ∈ [0,255]
- *    → espace de données 1D, K centroïdes scalaires
- *
- *  ② Images couleur RGB (PPM) : chaque pixel est un vecteur (R,G,B) ∈ [0,255]³
- *    → espace de données 3D, K centroïdes vectoriels
- *
- * Algorithme de Lloyd (itératif) :
- *   1. Initialisation des centroïdes (K-Means++ ou uniforme)
- *   2. Affectation : chaque pixel → classe du centroïde le plus proche
- *   3. Mise à jour  : centroïde k = moyenne de tous les pixels de la classe k
- *   4. Répéter 2-3 jusqu'à convergence (mouvement < epsilon) ou max_iter
- *
- * Métriques de qualité :
- *   - Inertie intra-classe (WCSS : Within-Cluster Sum of Squares)
- *   - Taux de convergence (nombre d'itérations effectuées)
- */
+
 #ifndef KMEANS_H
 #define KMEANS_H
 
