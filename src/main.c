@@ -1,6 +1,5 @@
 /**
- * main.c
- * ======
+ 
  * Programme principal : K-Moyennes sur images PGM (gris) et PPM (couleur).
  *
  * Usage : ./kmeans [image.pgm|image.ppm] [K]

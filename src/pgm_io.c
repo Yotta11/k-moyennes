@@ -1,6 +1,4 @@
-/**
- * pgm_io.c
- * ========
+/*
  * Implémentation lecture/écriture PGM (P5/P2) et PPM (P6).
  */
 #include <stdio.h>
