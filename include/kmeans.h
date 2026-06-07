@@ -43,7 +43,6 @@ typedef struct {
 } KMeansResultRGB;
 
 /* ── API niveaux de gris ─────────────────────────────────────────── */
-
 /**
  * Lance l'algorithme K-Moyennes sur une image PGM.
  * @return résultat alloué dynamiquement, ou NULL en cas d'erreur

@@ -1,6 +1,4 @@
 /**
- * pgm_io.h
- * ========
  * Module d'entrée/sortie pour images PGM (P5 binaire / P2 ASCII)
  * et PPM P6 couleur (RGB 8 bits/canal).
  *
