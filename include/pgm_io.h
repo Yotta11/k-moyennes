@@ -1,11 +1,4 @@
-/**
- * Module d'entrée/sortie pour images PGM (P5 binaire / P2 ASCII)
- * et PPM P6 couleur (RGB 8 bits/canal).
- *
- * Convention mémoire : tableaux row-major continus.
- *   PGM : data[r*width + c]           — 1 octet/pixel
- *   PPM : data[(r*width+c)*3 + canal] — 3 octets/pixel (R,G,B)
- */
+
 #ifndef PGM_IO_H
 #define PGM_IO_H
 
