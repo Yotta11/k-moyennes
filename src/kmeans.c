@@ -1,6 +1,5 @@
 /**
- * kmeans.c
- * ========
+
  * Implémentation de l'algorithme K-Moyennes (Lloyd) pour images PGM et PPM.
  *
  * Détail de l'implémentation :
