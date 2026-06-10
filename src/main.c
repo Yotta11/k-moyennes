@@ -108,7 +108,7 @@ static void process_ppm(const char *path, int k)
     ppm_free(img);
 }
 
-/* ── Programme principal ─────────────────────────────────────────── */
+
 int main(int argc, char *argv[])
 {
     printf("╔══════════════════════════════════════════════════════╗\n");
@@ -116,7 +116,7 @@ int main(int argc, char *argv[])
     printf("║      PGM (niveaux de gris) + PPM (couleur RGB)       ║\n");
     printf("╚══════════════════════════════════════════════════════╝\n");
 
-    /* Mode argument unique */
+    
     if (argc >= 2) {
         int k = (argc >= 3) ? atoi(argv[2]) : 4;
         if (k < 2) k = 2;
@@ -127,7 +127,7 @@ int main(int argc, char *argv[])
         return EXIT_SUCCESS;
     }
 
-    /* Mode démonstration : images PGM avec K ∈ {2,3,4,6} */
+    
     const char *pgm_images[] = {
         "../assets/cameraman.pgm",
         "../assets/bridge.pgm",
