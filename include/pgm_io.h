@@ -4,7 +4,7 @@
 
 #include <stdint.h>
 
-/* ── Structures ──────────────────────────────────────────────────── */
+
 
 /** Image en niveaux de gris (PGM) */
 typedef struct {
@@ -42,4 +42,4 @@ void      ppm_free(PPMImage *img);
 /** Convertit PGM → PPM (R=G=B=gris) pour superposition de couleurs */
 PPMImage *ppm_from_pgm(const PGMImage *gray);
 
-#endif /* PGM_IO_H */
+#endif 
