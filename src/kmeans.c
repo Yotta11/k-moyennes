@@ -281,9 +281,7 @@ void kmeans_print_result(const KMeansResult *r, const char *name)
     printf("╚══════╩═══════════╩═══════════╩═════════════╩═════════╝\n");
 }
 
-/* ══════════════════════════════════════════════════════════════════ */
-/*  COULEUR RGB                                                       */
-/* ══════════════════════════════════════════════════════════════════ */
+//couleur rgb
 
 static KMeansResultRGB *result_alloc_rgb(int k, int n)
 {
@@ -350,7 +348,7 @@ static void init_kpp_rgb(const uint8_t *data, int n, double (*centroids)[3], int
     free(dist2);
 }
 
-/* Initialisation uniforme couleur */
+
 static void init_uniform_rgb(int n, double (*centroids)[3], int k)
 {
     (void)n;
