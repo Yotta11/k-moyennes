@@ -17,10 +17,7 @@ static void skip_ws(FILE *f)
     }
 }
 
-/* ══════════════════════════════════════════════════════════════════ */
-/*  PGM                                                               */
-/* ══════════════════════════════════════════════════════════════════ */
-
+//pgm 8bits
 PGMImage *pgm_create(int w, int h, int maxval)
 {
     PGMImage *img = malloc(sizeof(PGMImage));
@@ -108,9 +105,7 @@ void pgm_free(PGMImage *img)
     free(img->data); free(img);
 }
 
-/* ══════════════════════════════════════════════════════════════════ */
-/*  PPM                                                               */
-/* ══════════════════════════════════════════════════════════════════ */
+//ppm 24bits
 
 PPMImage *ppm_create(int w, int h)
 {
