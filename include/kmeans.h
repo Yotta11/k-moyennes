@@ -44,19 +44,14 @@ typedef struct {
 
 KMeansResult *kmeans_pgm(const PGMImage *img, const KMeansParams *p);
 
-/**
- * Génère l'image segmentée : chaque pixel prend la valeur du centroïde
- * de sa classe (image en niveaux de gris uniformes par région).
- */
+
+
 PGMImage *kmeans_render_gray(const PGMImage *src, const KMeansResult *r);
 
-/**
- * Génère une image de segmentation colorée : chaque classe reçoit
- * une couleur distincte pour visualisation.
- */
+
 PPMImage *kmeans_render_color(const PGMImage *src, const KMeansResult *r);
 
-/** Libère un KMeansResult. */
+
 void kmeans_free(KMeansResult *r);
 
 /* ── API couleur RGB ─────────────────────────────────────────────── */
@@ -66,10 +61,7 @@ void kmeans_free(KMeansResult *r);
  */
 KMeansResultRGB *kmeans_ppm(const PPMImage *img, const KMeansParams *p);
 
-/**
- * Génère l'image segmentée couleur : chaque pixel prend la couleur
- * moyenne (R,G,B) de sa classe.
- */
+
 PPMImage *kmeans_render_rgb(const PPMImage *src, const KMeansResultRGB *r);
 
 /** Libère un KMeansResultRGB. */
@@ -81,4 +73,4 @@ void kmeans_free_rgb(KMeansResultRGB *r);
 void kmeans_print_result(const KMeansResult *r, const char *imgname);
 void kmeans_print_result_rgb(const KMeansResultRGB *r, const char *imgname);
 
-#endif /* KMEANS_H */
+#endif 
