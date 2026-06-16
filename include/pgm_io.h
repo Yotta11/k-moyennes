@@ -10,11 +10,11 @@
 typedef struct {
     int      width;
     int      height;
-    int      maxval;    /**< valeur max (typiquement 255) */
-    uint8_t *data;      /**< 1 octet/pixel, row-major     */
+    int      maxval;    
+    uint8_t *data;      
 } PGMImage;
 
-/** Image couleur RGB (PPM) */
+
 typedef struct {
     int      width;
     int      height;
