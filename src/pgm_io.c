@@ -1,6 +1,5 @@
-/*
- * Implémentation lecture/écriture PGM (P5/P2) et PPM (P6).
- */
+ //PGM (P5/P2) et PPM (P6).
+ 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
