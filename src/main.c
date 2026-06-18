@@ -20,7 +20,7 @@
 #include "pgm_io.h"
 #include "kmeans.h"
 
-/* ── Utilitaire : nom de base sans extension ─────────────────────── */
+
 static void basename_noext(const char *path, char *out, int maxlen)
 {
     const char *s = strrchr(path, '/');
@@ -36,7 +36,7 @@ static int ends_with(const char *s, const char *suf) {
     return ls >= lf && strcmp(s + ls - lf, suf) == 0;
 }
 
-/* ── Traitement d'une image PGM ──────────────────────────────────── */
+
 static void process_pgm(const char *path, int k)
 {
     char base[256];
@@ -53,7 +53,7 @@ static void process_pgm(const char *path, int k)
 
     kmeans_print_result(r, base);
 
-    /* Rendu niveaux de gris */
+   
     char path_gray[512], path_col[512];
     snprintf(path_gray, sizeof(path_gray), "output/%s_k%d_gray.pgm", base, k);
     snprintf(path_col,  sizeof(path_col),  "output/%s_k%d_color.ppm", base, k);
@@ -65,7 +65,6 @@ static void process_pgm(const char *path, int k)
         pgm_free(seg_gray);
     }
 
-    /* Rendu coloré */
     PPMImage *seg_col = kmeans_render_color(img, r);
     if (seg_col) {
         ppm_save(seg_col, path_col);
@@ -77,7 +76,7 @@ static void process_pgm(const char *path, int k)
     pgm_free(img);
 }
 
-/* ── Traitement d'une image PPM couleur ──────────────────────────── */
+
 static void process_ppm(const char *path, int k)
 {
     char base[256];
