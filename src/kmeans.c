@@ -1,5 +1,4 @@
 /**
-
  * Implémentation de l'algorithme K-Moyennes (Lloyd) pour images PGM et PPM.
  *
  * Détail de l'implémentation :
@@ -49,11 +48,9 @@ static const uint8_t PALETTE[][3] = {
 };
 #define N_COLORS  ((int)(sizeof(PALETTE)/sizeof(PALETTE[0])))
 
-/* ══════════════════════════════════════════════════════════════════ */
-/*  NIVEAUX DE GRIS                                                   */
-/* ══════════════════════════════════════════════════════════════════ */
+//niveau de gris
 
-/* ── Allocation / libération ─────────────────────────────────────── */
+
 static KMeansResult *result_alloc(int k, int n)
 {
     KMeansResult *r = calloc(1, sizeof(KMeansResult));
