@@ -6,7 +6,6 @@
 #include <ctype.h>
 #include "pgm_io.h"
 
-/* ── Helper : saute espaces et commentaires ──────────────────────── */
 static void skip_ws(FILE *f)
 {
     int c;
