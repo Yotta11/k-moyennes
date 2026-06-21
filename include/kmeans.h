@@ -56,9 +56,7 @@ void kmeans_free(KMeansResult *r);
 
 /* ── API couleur RGB ─────────────────────────────────────────────── */
 
-/**
- * Lance l'algorithme K-Moyennes sur une image PPM couleur.
- */
+//lance avec les images en couleurs
 KMeansResultRGB *kmeans_ppm(const PPMImage *img, const KMeansParams *p);
 
 
@@ -67,9 +65,6 @@ PPMImage *kmeans_render_rgb(const PPMImage *src, const KMeansResultRGB *r);
 /** Libère un KMeansResultRGB. */
 void kmeans_free_rgb(KMeansResultRGB *r);
 
-/* ── Affichage des résultats ─────────────────────────────────────── */
-
-/** Affiche un tableau récapitulatif sur stdout. */
 void kmeans_print_result(const KMeansResult *r, const char *imgname);
 void kmeans_print_result_rgb(const KMeansResultRGB *r, const char *imgname);
 
