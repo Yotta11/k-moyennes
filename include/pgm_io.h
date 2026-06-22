@@ -21,7 +21,7 @@ typedef struct {
     uint8_t *data;      /**< 3 octets/pixel : R G B ...   */
 } PPMImage;
 
-/* ── Macros d'accès ──────────────────────────────────────────────── */
+// macros d'acces'
 #define PGM_AT(img,r,c)    ((img)->data[(r)*(img)->width+(c)])
 #define PPM_R(img,r,c)     ((img)->data[((r)*(img)->width+(c))*3+0])
 #define PPM_G(img,r,c)     ((img)->data[((r)*(img)->width+(c))*3+1])
