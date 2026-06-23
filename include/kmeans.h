@@ -54,15 +54,13 @@ PPMImage *kmeans_render_color(const PGMImage *src, const KMeansResult *r);
 
 void kmeans_free(KMeansResult *r);
 
-/* ── API couleur RGB ─────────────────────────────────────────────── */
-
 //lance avec les images en couleurs
 KMeansResultRGB *kmeans_ppm(const PPMImage *img, const KMeansParams *p);
 
 
 PPMImage *kmeans_render_rgb(const PPMImage *src, const KMeansResultRGB *r);
 
-/** Libère un KMeansResultRGB. */
+
 void kmeans_free_rgb(KMeansResultRGB *r);
 
 void kmeans_print_result(const KMeansResult *r, const char *imgname);
